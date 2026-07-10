@@ -31,7 +31,6 @@ async def handle_register(ws, dev_id):
 # json example {"id": "base1","type": "button","op_id": "12","value": "1"}
 
 async def handle_device_message(ws, message_text):
-    # TODO: parsing
     try:
         msg = json.loads(message_text)
     except json.JSONDecodeError:
